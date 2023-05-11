@@ -1,3 +1,4 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showNumber(input.lightLevel())
+input.setAccelerometerRange(AcceleratorRange.OneG)
+basic.forever(function () {
+    basic.showNumber(input.acceleration(Dimension.X))
 })
